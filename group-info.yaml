@@ -5,8 +5,9 @@ metadata:
   description: The example team responsible for example components
 spec:
   type: team
-  parent: ops  # Optional: You can specify the parent group if this group is a child of another group
   members:
     - jdoe
     - asmith
     - bjohnson
+  children:
+    - example-subgroup  # Optional: You can specify child groups or leave it empty
