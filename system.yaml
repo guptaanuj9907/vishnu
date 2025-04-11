@@ -2,4 +2,6 @@ apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
   name: example-system
-  description: A system that contains example components
+  description: A system for managing example components
+spec:
+  owner: example-team  # Optional: specify the owning group/team if applicable
