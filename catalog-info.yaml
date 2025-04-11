@@ -2,16 +2,9 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: test
-  description: The place to be, for great artists
-  labels:
-    example.com/custom: custom_label_value
-  links:
-    - url: https://admin.example-org.com
-      title: Admin Dashboard
-      icon: dashboard
-      type: admin-dashboard
+  description: A simple component managed by the example team
 spec:
-  type: website
+  type: service
   lifecycle: production
-  owner: artist-relations-team
-
+  owner: example-team  # The group name here
+  system: example-system  # If the component is part of a system
