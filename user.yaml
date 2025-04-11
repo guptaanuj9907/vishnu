@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: jdoe
+  description: "jdoe"
+spec:
+  memberOf:
+    - example-team  # Link the user to the example-team
