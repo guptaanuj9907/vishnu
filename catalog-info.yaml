@@ -3,12 +3,13 @@ kind: Component
 metadata:
   name: test
   description: A simple component managed by the example team
+  links:
+      - url: https://dashboard.example.com
+        title: My Dashboard
+        icon: dashboard
 spec:
   type: service
   lifecycle: production
   owner: example-team  # The group name here
   system: example-system  # If the component is part of a system
-links:
-    - url: https://dashboard.example.com
-      title: My Dashboard
-      icon: dashboard
+  
