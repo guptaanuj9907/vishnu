@@ -1,14 +1,12 @@
 apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
-  name: artist-relations-team
-  description: The infra business unit
+  name: example-team
+  description: The example team responsible for example components
 spec:
-  type: business-unit
-  profile:
-    displayName: artist-relations-team
-    email: infrastructure@example.com
-    picture: https://example.com/groups/bu-infrastructure.jpeg
-  parent: ops
-  children: [backstage, other]
-  members: [jdoe]
+  type: team
+  parent: ops  # Optional: You can specify the parent group if this group is a child of another group
+  members:
+    - jdoe
+    - asmith
+    - bjohnson
