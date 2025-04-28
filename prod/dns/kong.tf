@@ -47,3 +47,16 @@ module "my-app-int" {
   setid         = ['prod-green-tv2', 'prod-white-tv2']
   weight_record = ['prod-green-int-v2.razorpay.com', 'prod-white-int-v2.razorpay.com']
 }
+#############test-exp-4-external- ############
+module "test-exp-4-external" {
+      source        = "../../modules/weighted-dns/"
+      zone_id       = data.aws_route53_zone.com.id
+      record_name   = "test"
+      record_type   = "CNAME"
+      env           = "prod"
+      ttl           = "300"
+      target_record = "prod-test-weighted.rzp.com"
+      weight_dns    = ['50', '50']
+      setid         = ['prod-green-tv2', 'prod-white-tv2']
+      weight_record = ['prod-green-ext-v2.razorpay.com', 'prod-white-ext-v2.razorpay.com']
+}
